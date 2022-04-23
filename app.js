@@ -1,5 +1,5 @@
 const express = require('express')
-const users = require('./controllers/users')
+const implement = require('./implementation')
 var app = express()
 
 var totoro = require('totoro-node');
@@ -15,7 +15,7 @@ app.use('/', totoro.rain({
                 method: "GET",
                 active: true,
                 deprecated: false,
-                implementation: users.accueil
+                implementation: implement.accueil
             },
 
             {
@@ -23,7 +23,7 @@ app.use('/', totoro.rain({
                 method: "GET",
                 active: true,
                 deprecated: false,
-                implementation: users.currencies_liste
+                implementation: implement.currencies_liste
             },
 
             {
@@ -31,7 +31,7 @@ app.use('/', totoro.rain({
                 method: "GET",
                 active: true,
                 deprecated: false,
-                implementation: users.currencies_liste_id
+                implementation: implement.currencies_liste_id
             },
 
             {
@@ -39,7 +39,7 @@ app.use('/', totoro.rain({
                 method: "POST",
                 active: true,
                 deprecated: false,
-                implementation: users.currencies_ajout
+                implementation: implement.currencies_ajout
             },
 
             {
@@ -47,7 +47,7 @@ app.use('/', totoro.rain({
                 method: "PUT",
                 active: true,
                 deprecated: false,
-                implementation: users.currencies_modif
+                implementation: implement.currencies_modif
             },
 
             {
@@ -55,7 +55,7 @@ app.use('/', totoro.rain({
                 method: "DELETE",
                 active: true,
                 deprecated: false,
-                implementation: users.currencies_supr
+                implementation: implement.currencies_supr
             },
 
             {
@@ -63,7 +63,7 @@ app.use('/', totoro.rain({
                 method: "GET",
                 active: true,
                 deprecated: false,
-                implementation: users.currencies_all
+                implementation: implement.currencies_all
             }
         ]
     }
@@ -73,7 +73,7 @@ app.use('/', totoro.rain({
             {
                 route: "/",
                 method: "GET",
-                implementation: users.accueil_v2
+                implementation: implement.accueil_v2
             }
         ]
     }
