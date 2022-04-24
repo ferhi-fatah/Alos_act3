@@ -4,7 +4,7 @@ var app = express()
 
 var totoro = require('totoro-node');
 app.use(express.json())
-app.use('/', totoro.rain({
+app.use('/',verifyToken, totoro.rain({
 
     "1.0.0": {
         active: true,
@@ -16,6 +16,14 @@ app.use('/', totoro.rain({
                 active: true,
                 deprecated: false,
                 implementation: implement.accueil
+            },
+            
+            {
+                route: "/login",
+                method: "POST",
+                active: true,
+                deprecated: false,
+                implementation: implement.login
             },
 
             {
@@ -82,6 +90,15 @@ app.use('/', totoro.rain({
                 method: "GET",
                 implementation: implement.accueil_v2
             },
+
+            {
+                route: "/login",
+                method: "POST",
+                active: true,
+                deprecated: false,
+                implementation: implement.login
+            },
+
             {
                 route: "/data",
                 method: "GET",
@@ -139,6 +156,32 @@ app.use('/', totoro.rain({
 
 
 
+
+// FORMAT OF TOKEN
+// Authorization: Bearer <access_token>
+
+// Verify Token
+
+
+function verifyToken(req, res, next) {
+    // Get auth header value
+    const bearerHeader = req.headers['authorization'];
+    // Check if bearer is undefined
+    if (typeof bearerHeader !== 'undefined') {
+      // Split at the space
+      const bearer = bearerHeader.split(' ');
+      // Get token from array
+      const bearerToken = bearer[1];
+      // Set the token
+      req.token = bearerToken;
+      // Next middleware
+      next();
+    } else {
+      // Forbidden
+      res.sendStatus(403);
+    }
+  
+  }
 app.listen(3000, () => {
     console.log("Serveur à l'écoute")
 })
