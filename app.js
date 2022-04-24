@@ -19,6 +19,13 @@ app.use('/', totoro.rain({
             },
 
             {
+                route: "/data",
+                method: "GET",
+                active: true,
+                deprecated: false,
+                implementation: implement.currencies_liste
+            },
+            {
                 route: "/currencies",
                 method: "GET",
                 active: true,
@@ -74,10 +81,62 @@ app.use('/', totoro.rain({
                 route: "/",
                 method: "GET",
                 implementation: implement.accueil_v2
+            },
+            {
+                route: "/data",
+                method: "GET",
+                implementation: implement.data_liste
+            },
+            {
+                route: "/currencies",
+                method: "GET",
+                active: true,
+                deprecated: false,
+                implementation: implement.currencies_liste
+            },
+            {
+                route: "/currencies/:rank",
+                method: "GET",
+                active: true,
+                deprecated: false,
+                implementation: implement.currencies_liste_id
+            },
+
+            {
+                route: "/currencies",
+                method: "POST",
+                active: true,
+                deprecated: false,
+                implementation: implement.currencies_ajout
+            },
+
+            {
+                route: "/currencies/:rank",
+                method: "PUT",
+                active: true,
+                deprecated: false,
+                implementation: implement.currencies_modif
+            },
+
+            {
+                route: "/currencies/:rank",
+                method: "DELETE",
+                active: true,
+                deprecated: false,
+                implementation: implement.currencies_supr
+            },
+
+            {
+                route: "*",
+                method: "GET",
+                active: true,
+                deprecated: false,
+                implementation: implement.currencies_all
             }
         ]
     }
 }));
+
 
 
 app.listen(3000, () => {
