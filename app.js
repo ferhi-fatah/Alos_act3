@@ -1,13 +1,13 @@
 const express = require('express')
-const implement = require('./implementation')
+const implement = require('./routes/implementation')
 var app = express()
-const authToken = require("./authenticateToken");
+const authToken = require("./authenticate/authenticateToken");
 var totoro = require('totoro-node');
 
 
 app.use(express.json())
 
-app.use("/auth", require("./authentication"));
+app.use("/auth", require("./authenticate/authentication"));
 
 app.use('/',authToken, totoro.rain({
 

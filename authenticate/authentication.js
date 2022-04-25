@@ -2,8 +2,7 @@ const router = require("express").Router();
 const { check, validationResult } = require("express-validator");
 const bcrypt = require("bcrypt");
 const JWT = require("jsonwebtoken");
-const { users } = require("./users");
-
+const  users  = require("../data/users");
 require("dotenv").config();
 
 // Sign up
