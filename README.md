@@ -43,12 +43,6 @@ le modèle :
 ![2](https://user-images.githubusercontent.com/62666792/165106203-565a059f-8815-4448-b9d5-6bf0fe16aaa8.PNG)
 
 
-
-
-
-
-
-
 ## 2. L'authentification :
  - Pour l'implémentation d'authentification dans notre API , on a utulise le  package [JSON Web Tokens](https://www.npmjs.com/package/jsonwebtoken) pour genéré des jeton sécurisé  (tokens) et la vérification de l'intégrité et de l'authenticité des données   :  
 ### L'installation :
@@ -56,7 +50,17 @@ le modèle :
 ### L'usage :  
 ` jwt.sign(payload, secretOrPrivateKey, [options, callback]) `   
 le code de signup , login et logout sont implémentés au fichie [authentication](https://github.com/ferhi-fatah/Alos_act3/blob/main/authentication.js)  
-### L'execution :
+### L'execution :  
+ - les data d'utilisateurs :
+![image](https://user-images.githubusercontent.com/62666792/165107711-7470438f-f050-4a8d-9473-216969110d42.png)
+
+
+![image](https://user-images.githubusercontent.com/62666792/165108180-2e3271b3-226e-4c3a-8d96-7558644339a3.png)
+![image](https://user-images.githubusercontent.com/62666792/165108261-65af2475-b0cd-4072-ae27-dfae325f5984.png)
+
+
+
+
 
 
  
