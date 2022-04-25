@@ -1,4 +1,5 @@
 # Alos_act3
 l'activite 3 de module Architecture logicielle orientée service  
-  - *Implementation API versioning*
-  - *l'authentification JWT*
+  - *Implementation API versioning .*
+  - *l'authentification JWT .*
+  -  Thème  : Cryptome , API de crypto-monnaie .
