@@ -56,8 +56,23 @@ le code de signup , login et logout sont implémentés au fichie [authentication
 
 - Singup :
 ![image](https://user-images.githubusercontent.com/62666792/165108180-2e3271b3-226e-4c3a-8d96-7558644339a3.png)
+![image](https://user-images.githubusercontent.com/62666792/165115256-c69f21fd-bb18-479a-9408-b92653b51ac2.png)
 ![image](https://user-images.githubusercontent.com/62666792/165110274-b260c18d-4512-4113-8857-e38563e02e72.png)
 ![4](https://user-images.githubusercontent.com/62666792/165109053-47bd2749-1c01-4dae-bafe-f61b9da65bc8.PNG)
+![image](https://user-images.githubusercontent.com/62666792/165111626-b69fbda9-55b9-498c-a82f-0b10b6123329.png)
+
+- Login ( génération de nouveau token ) :
+![image](https://user-images.githubusercontent.com/62666792/165110773-508f339c-320e-45dc-8e63-e86fd9dc98d8.png)
+- Logout ( suppression de token ) :
+![image](https://user-images.githubusercontent.com/62666792/165111360-6e75f933-d9a6-4352-8385-e916ac51b1eb.png)
+
+ - L'ajout de data :
+ ![image](https://user-images.githubusercontent.com/62666792/165112030-39e02069-8a58-471a-8829-8e7c47179b48.png)
+ ![image](https://user-images.githubusercontent.com/62666792/165115860-aadb8e9a-b71e-4dd7-9c0c-755f1afadc9d.png)
+
+
+
+
 
 
 
