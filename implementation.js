@@ -16,7 +16,7 @@ module.exports.login = function (apiVersion, req, res) {
     username: 'brad',
     email: 'brad@gmail.com'
   }
-  return jwt.sign({ user }, 'secretkey', { expiresIn: '3000s' }, (err, token) => {
+  return jwt.sign({ user }, 'secretkey', { expiresIn: '1 days' }, (err, token) => {
     res.json({
       token
     });
