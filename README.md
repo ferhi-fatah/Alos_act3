@@ -5,6 +5,6 @@ l'activite 3 de module Architecture logicielle orientée service
   -  Thème  : Cryptome , API de crypto-monnaie .
 
 
-## 1/ Versionnage :
+## 1. Versionnage :
 
-## 2/ Authentification :
+## 2. Authentification :
