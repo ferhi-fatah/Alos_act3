@@ -145,13 +145,6 @@ app.use('/',authToken, totoro.rain({
 }));
 
 
-
-
-// FORMAT OF TOKEN
-// Authorization: Bearer <access_token>
-
-// Verify Token
-
  
 app.listen(3000, () => {
     console.log("Serveur à l'écoute")

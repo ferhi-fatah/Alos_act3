@@ -33,7 +33,7 @@ router.post( "/signup",
 
     if (user) {
       // 422 Unprocessable Entity: server understands the content type of the request entity
-      // 200 Ok: Gmail, Facebook, Amazon, Twitter are returning 200 for user already exists
+      // 200 Ok user already exists
       return res.status(200).json({
         errors: [
           {
@@ -72,11 +72,10 @@ router.post( "/signup",
 );
 
 // Error status code
-// 401 Unauthorized: it’s for authentication, not authorization. Server says "you're not authenticated".
-// 403 Forbidden: it's for authorization. Server says "I know who you are,
-//                but you just don’t have permission to access this resource".
+// 401 (Unauthorized ): you're not authenticated
+// 403 (Forbidden) : I know who you are,but you just don’t have permission to access this resource".
 
-///////////////////////////
+ 
 
 // Get all users
 router.get("/users", (req, res) => {
@@ -195,8 +194,8 @@ router.post("/token", async (req, res) => {
   }
 });
 
-// Deauthenticate - log out
-// Delete refresh token
+// log out
+
 router.delete("/logout", (req, res) => {
   const refreshToken = req.header("x-auth-token");
 
