@@ -51,13 +51,12 @@ le modèle :
 ` jwt.sign(payload, secretOrPrivateKey, [options, callback]) `   
 le code de signup , login et logout sont implémentés au fichie [authentication](https://github.com/ferhi-fatah/Alos_act3/blob/main/authentication.js)  
 ### L'execution :  
- - les data d'utilisateurs :  
- 
-![image](https://user-images.githubusercontent.com/62666792/165107711-7470438f-f050-4a8d-9473-216969110d42.png)
+ - les data d'utilisateurs : 
+ ![image](https://user-images.githubusercontent.com/62666792/165107711-7470438f-f050-4a8d-9473-216969110d42.png)
 
 - Singup :
 ![image](https://user-images.githubusercontent.com/62666792/165108180-2e3271b3-226e-4c3a-8d96-7558644339a3.png)
-![image](https://user-images.githubusercontent.com/62666792/165108261-65af2475-b0cd-4072-ae27-dfae325f5984.png)
+    ![image](https://user-images.githubusercontent.com/62666792/165108261-65af2475-b0cd-4072-ae27-dfae325f5984.png)
 ![4](https://user-images.githubusercontent.com/62666792/165109053-47bd2749-1c01-4dae-bafe-f61b9da65bc8.PNG)
 
 
