@@ -1,10 +1,15 @@
 const express = require('express')
 const implement = require('./implementation')
 var app = express()
-
+const authToken = require("./authenticateToken");
 var totoro = require('totoro-node');
+
+
 app.use(express.json())
-app.use('/',verifyToken, totoro.rain({
+
+app.use("/auth", require("./authentication"));
+
+app.use('/',authToken, totoro.rain({
 
     "1.0.0": {
         active: true,
@@ -18,13 +23,6 @@ app.use('/',verifyToken, totoro.rain({
                 implementation: implement.accueil
             },
             
-            {
-                route: "/login",
-                method: "POST",
-                active: true,
-                deprecated: false,
-                implementation: implement.login
-            },
 
             {
                 route: "/data",
@@ -92,14 +90,6 @@ app.use('/',verifyToken, totoro.rain({
             },
 
             {
-                route: "/login",
-                method: "POST",
-                active: true,
-                deprecated: false,
-                implementation: implement.login
-            },
-
-            {
                 route: "/data",
                 method: "GET",
                 implementation: implement.data_liste
@@ -162,26 +152,7 @@ app.use('/',verifyToken, totoro.rain({
 
 // Verify Token
 
-
-function verifyToken(req, res, next) {
-    // Get auth header value
-    const bearerHeader = req.headers['authorization'];
-    // Check if bearer is undefined
-    if (typeof bearerHeader !== 'undefined') {
-      // Split at the space
-      const bearer = bearerHeader.split(' ');
-      // Get token from array
-      const bearerToken = bearer[1];
-      // Set the token
-      req.token = bearerToken;
-      // Next middleware
-      next();
-    } else {
-      // Forbidden
-      res.sendStatus(403);
-    }
-  
-  }
+ 
 app.listen(3000, () => {
     console.log("Serveur à l'écoute")
 })

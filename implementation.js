@@ -1,8 +1,6 @@
 const currencies = require('./currencies.json')
 const data = require('./data.json')
-
 const { body, validationResult } = require('express-validator');
-
 const jwt = require('jsonwebtoken');
 
 // version 1 :
