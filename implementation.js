@@ -3,31 +3,22 @@ const data = require('./data.json')
 const { body, validationResult } = require('express-validator');
 const jwt = require('jsonwebtoken');
 
-// version 1 :
+// **** version 1 : ****
+
+// l'accueil :
 module.exports.accueil = function (apiVersion, req, res) {
 
   return res.json({ status: "success", message: "Welcome To cryptom Testing API Version : 1.0.0" });
 }
 
-module.exports.login = function (apiVersion, req, res) {
-
-  const user = {
-    id: 1,
-    username: 'brad',
-    email: 'brad@gmail.com'
-  }
-  return jwt.sign({ user }, 'secretkey', { expiresIn: '1 days' }, (err, token) => {
-    res.json({
-      token
-    });
-  });
-}
-
+// récupéré data ( currencies ):
 module.exports.currencies_liste = function (apiVersion, req, res) {
 
   return res.status(200).json(currencies)
 
 }
+
+// récupéré "currencies" by id (rank) : 
 module.exports.currencies_liste_id = function (apiVersion, req, res) {
 
   const rank = parseInt(req.params.rank)
@@ -36,6 +27,8 @@ module.exports.currencies_liste_id = function (apiVersion, req, res) {
 
 }
 
+
+// ajouter currencie :
 module.exports.currencies_ajout = function (apiVersion, req, res) {
   body('symbol').isLength({ max: 4 }),
     body('symbol').isLength({ min: 2 }),
@@ -57,7 +50,7 @@ module.exports.currencies_ajout = function (apiVersion, req, res) {
 }
 
 
-
+// modifier currencie
 module.exports.currencies_modif = function (apiVersion, req, res) {
   const rank = parseInt(req.params.rank)
   let currencie = currencies.find(currencie => currencie.rank === rank)
@@ -76,6 +69,8 @@ module.exports.currencies_modif = function (apiVersion, req, res) {
     res.status(200).json(currencie)
 }
 
+
+// supprime currencie
 module.exports.currencies_supr = function (apiVersion, req, res) {
 
   const rank = parseInt(req.params.rank)
@@ -84,6 +79,8 @@ module.exports.currencies_supr = function (apiVersion, req, res) {
   res.status(200).json(currencies)
 }
 
+
+// les fausses routes (l'errorhandler ) :
 module.exports.currencies_all = function (apiVersion, req, res, next) {
 
   res.status(404).json({
@@ -97,7 +94,12 @@ module.exports.currencies_all = function (apiVersion, req, res, next) {
 
   next(err);
 };
-// version 2 :
+
+
+
+// **** version 2 : ****
+
+// l'accueil :
 module.exports.accueil_v2 = function (apiVersion, req, res) {
 
   return res.json({ status: "success", message: "Welcome To cryptom Testing API Version : 2.0.0" });
@@ -105,6 +107,7 @@ module.exports.accueil_v2 = function (apiVersion, req, res) {
 }
 
 
+// récupéré data ( currencies / market / candles ):
 module.exports.data_liste = function (apiVersion, req, res) {
 
   return res.status(200).json(data)
