@@ -17,30 +17,41 @@ le modèle :
  - Dans notre modèle la version 2.0.0 est une versione etendu du versione 1.0.0 ,elle inclut ( plus la ressource currencies) d'autre ressources (  market / candles ).
 ### L'execution :  
 ##### l'accueil :
- - la route (http://localhost:3000/1.0.0) :
+ - la route (http://localhost:3000/1.0.0) :  
+ 
 ![image](https://user-images.githubusercontent.com/62666792/165101941-dc7beb06-cac9-4e77-ade8-73ce6cc73dea.png)
- - la route (http://localhost:3000/) (default ) :
+ - la route (http://localhost:3000/) (default ) :  
+ 
 ![image](https://user-images.githubusercontent.com/62666792/165102202-dc3373c2-542c-457b-8ad6-818a3affc916.png)  
- - la route (http://localhost:3000/2.0.0) :
+ - la route (http://localhost:3000/2.0.0) :  
+ 
 ![image](https://user-images.githubusercontent.com/62666792/165102012-4ac8b1f2-e9c5-4140-8018-1a1ccbdba5ec.png)  
 ##### la récupération de data :
- - la route (http://localhost:3000/1.0.0/data) :
+ - la route (http://localhost:3000/1.0.0/data) :  
+ 
 ![image](https://user-images.githubusercontent.com/62666792/165102851-27b92d40-d41c-45c8-8878-0eecebbd4853.png) 
- - la route (http://localhost:3000/1.0.0/currencies/1) :
+ - la route (http://localhost:3000/1.0.0/currencies/1) :  
+ 
 ![image](https://user-images.githubusercontent.com/62666792/165104176-11cf3d97-ae9a-4677-bf44-3bb6bf3e44e7.png)
- - la route (http://localhost:3000/2.0.0/data) :
+ - la route (http://localhost:3000/2.0.0/data) :  
+ 
 ![image](https://user-images.githubusercontent.com/62666792/165103408-834a117d-a3ad-466b-b75a-69a01f9cc4db.png)
- - la route (http://localhost:3000/2.0.0/currencies/1) :
+ - la route (http://localhost:3000/2.0.0/currencies/1) :  
+ 
 ![image](https://user-images.githubusercontent.com/62666792/165104270-a74582d5-1f02-446a-a68b-519b2ed19a80.png)
 ##### la suppression  de data :  
- - la route (http://localhost:3000/1.0.0/currencies/1) :
+ - la route (http://localhost:3000/1.0.0/currencies/1) :  
+ 
 ![image](https://user-images.githubusercontent.com/62666792/165105022-48f936db-f878-4573-b026-10ce78bc9f20.png)
- - la route (http://localhost:3000/2.0.0/currencies/1) :
+ - la route (http://localhost:3000/2.0.0/currencies/1) :  
+ 
 ![image](https://user-images.githubusercontent.com/62666792/165105220-e8c5f593-948f-4178-a065-d9fbee7600e9.png)
 ##### la modification  de data :  
- - la route (http://localhost:3000/1.0.0/currencies/1) :
+ - la route (http://localhost:3000/1.0.0/currencies/1) :  
+ 
 ![1](https://user-images.githubusercontent.com/62666792/165106193-26112639-0f3c-402d-8a1a-d6f02d97e54e.PNG)
- - la route (http://localhost:3000/2.0.0/currencies/1) :
+ - la route (http://localhost:3000/2.0.0/currencies/1) :  
+ 
 ![2](https://user-images.githubusercontent.com/62666792/165106203-565a059f-8815-4448-b9d5-6bf0fe16aaa8.PNG)
 
 
@@ -55,19 +66,22 @@ le code de signup , login et logout sont implémentés au fichie [authentication
  - les data d'utilisateurs : 
  ![image](https://user-images.githubusercontent.com/62666792/165107711-7470438f-f050-4a8d-9473-216969110d42.png)
 
-- Singup :
+- Singup :  
+
 ![image](https://user-images.githubusercontent.com/62666792/165108180-2e3271b3-226e-4c3a-8d96-7558644339a3.png)
-![image](https://user-images.githubusercontent.com/62666792/165115256-c69f21fd-bb18-479a-9408-b92653b51ac2.png)
 ![image](https://user-images.githubusercontent.com/62666792/165110274-b260c18d-4512-4113-8857-e38563e02e72.png)
 ![4](https://user-images.githubusercontent.com/62666792/165109053-47bd2749-1c01-4dae-bafe-f61b9da65bc8.PNG)
 ![image](https://user-images.githubusercontent.com/62666792/165111626-b69fbda9-55b9-498c-a82f-0b10b6123329.png)
+![image](https://user-images.githubusercontent.com/62666792/165118896-c1f6acbd-c3c9-4dd2-ba1b-7d83023b7e3f.png)
 
-- Login ( génération de nouveau token ) :
+- Login ( génération de nouveau token ) :  
+
 ![image](https://user-images.githubusercontent.com/62666792/165110773-508f339c-320e-45dc-8e63-e86fd9dc98d8.png)
 - Logout ( suppression de token ) :
 ![image](https://user-images.githubusercontent.com/62666792/165111360-6e75f933-d9a6-4352-8385-e916ac51b1eb.png)
 
- - L'ajout de data :
+ - L'ajout de data :  
+ 
  ![image](https://user-images.githubusercontent.com/62666792/165112030-39e02069-8a58-471a-8829-8e7c47179b48.png)
  ![image](https://user-images.githubusercontent.com/62666792/165115860-aadb8e9a-b71e-4dd7-9c0c-755f1afadc9d.png)
  ![image](https://user-images.githubusercontent.com/62666792/165118032-8d9aae76-bc88-4948-98ab-7c61de803854.png)
