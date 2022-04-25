@@ -21,7 +21,31 @@ le modèle :
  - la route (http://localhost:3000/) (default ) :
 ![image](https://user-images.githubusercontent.com/62666792/165102202-dc3373c2-542c-457b-8ad6-818a3affc916.png)  
  - la route (http://localhost:3000/2.0.0) :
-![image](https://user-images.githubusercontent.com/62666792/165102012-4ac8b1f2-e9c5-4140-8018-1a1ccbdba5ec.png)
+![image](https://user-images.githubusercontent.com/62666792/165102012-4ac8b1f2-e9c5-4140-8018-1a1ccbdba5ec.png)  
+##### la récupération de data :
+ - la route (http://localhost:3000/1.0.0/data) :
+![image](https://user-images.githubusercontent.com/62666792/165102851-27b92d40-d41c-45c8-8878-0eecebbd4853.png) 
+ - la route (http://localhost:3000/1.0.0/currencies/1) :
+![image](https://user-images.githubusercontent.com/62666792/165104176-11cf3d97-ae9a-4677-bf44-3bb6bf3e44e7.png)
+ - la route (http://localhost:3000/2.0.0/data) :
+![image](https://user-images.githubusercontent.com/62666792/165103408-834a117d-a3ad-466b-b75a-69a01f9cc4db.png)
+ - la route (http://localhost:3000/2.0.0/currencies/1) :
+![image](https://user-images.githubusercontent.com/62666792/165104270-a74582d5-1f02-446a-a68b-519b2ed19a80.png)
+##### la suppression  de data :  
+ - la route (http://localhost:3000/1.0.0/currencies/1) :
+![image](https://user-images.githubusercontent.com/62666792/165105022-48f936db-f878-4573-b026-10ce78bc9f20.png)
+ - la route (http://localhost:3000/2.0.0/currencies/1) :
+![image](https://user-images.githubusercontent.com/62666792/165105220-e8c5f593-948f-4178-a065-d9fbee7600e9.png)
+##### la modification  de data :  
+ - la route (http://localhost:3000/1.0.0/currencies/1) :
+![1](https://user-images.githubusercontent.com/62666792/165106193-26112639-0f3c-402d-8a1a-d6f02d97e54e.PNG)
+ - la route (http://localhost:3000/2.0.0/currencies/1) :
+![2](https://user-images.githubusercontent.com/62666792/165106203-565a059f-8815-4448-b9d5-6bf0fe16aaa8.PNG)
+
+
+
+
+
 
 
 
