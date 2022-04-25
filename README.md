@@ -69,6 +69,8 @@ le code de signup , login et logout sont implémentés au fichie [authentication
  - L'ajout de data :
  ![image](https://user-images.githubusercontent.com/62666792/165112030-39e02069-8a58-471a-8829-8e7c47179b48.png)
  ![image](https://user-images.githubusercontent.com/62666792/165115860-aadb8e9a-b71e-4dd7-9c0c-755f1afadc9d.png)
+ ![image](https://user-images.githubusercontent.com/62666792/165116506-b1b25438-02e8-445d-8901-8d32b2d147df.png)
+
 
 
 
