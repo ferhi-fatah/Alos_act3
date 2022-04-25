@@ -56,7 +56,8 @@ le code de signup , login et logout sont implémentés au fichie [authentication
 
 - Singup :
 ![image](https://user-images.githubusercontent.com/62666792/165108180-2e3271b3-226e-4c3a-8d96-7558644339a3.png)
-![image](https://user-images.githubusercontent.com/62666792/165109857-3f34af8e-cb4c-4e52-9602-097380b05c9f.png)
+![image](https://user-images.githubusercontent.com/62666792/165110015-cea1a197-272e-4043-919a-84dfd0064819.png)
+
 ![4](https://user-images.githubusercontent.com/62666792/165109053-47bd2749-1c01-4dae-bafe-f61b9da65bc8.PNG)
 
 
