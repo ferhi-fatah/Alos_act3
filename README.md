@@ -63,7 +63,8 @@ le modèle :
 ` jwt.sign(payload, secretOrPrivateKey, [options, callback]) `   
 le code de signup , login et logout sont implémentés au fichie [authentication](https://github.com/ferhi-fatah/Alos_act3/blob/main/authentication.js)  
 ### L'execution :  
- - les data d'utilisateurs : 
+ - les data d'utilisateurs :   
+ 
  ![image](https://user-images.githubusercontent.com/62666792/165107711-7470438f-f050-4a8d-9473-216969110d42.png)
 
 - Singup :  
@@ -77,13 +78,14 @@ le code de signup , login et logout sont implémentés au fichie [authentication
 - Login ( génération de nouveau token ) :  
 
 ![image](https://user-images.githubusercontent.com/62666792/165110773-508f339c-320e-45dc-8e63-e86fd9dc98d8.png)
-- Logout ( suppression de token ) :
+- Logout ( suppression de token ) :  
+
 ![image](https://user-images.githubusercontent.com/62666792/165111360-6e75f933-d9a6-4352-8385-e916ac51b1eb.png)
 
  - L'ajout de data :  
  
  ![image](https://user-images.githubusercontent.com/62666792/165112030-39e02069-8a58-471a-8829-8e7c47179b48.png)
- ![image](https://user-images.githubusercontent.com/62666792/165115860-aadb8e9a-b71e-4dd7-9c0c-755f1afadc9d.png)
+ ![image](https://user-images.githubusercontent.com/62666792/165119638-83a29eb1-d505-47b9-87c1-1aa873136858.png)
  ![image](https://user-images.githubusercontent.com/62666792/165118032-8d9aae76-bc88-4948-98ab-7c61de803854.png)
 
 
