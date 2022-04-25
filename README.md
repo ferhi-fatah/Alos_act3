@@ -6,7 +6,10 @@ l'activite 3 de module Architecture logicielle orientée service
 
 
 ## 1. Le versionnage :  
-pour l'implimentation des versionnes de notre API , on a utulise le  package [totoro-node](https://www.npmjs.com/package/totoro-node)  :
-` npm install totoro-node `
+pour l'implémentation des versionnes de notre API , on a utulise le  package [totoro-node](https://www.npmjs.com/package/totoro-node)  :  
+### L'nstallation :
+` npm install totoro-node `  
+### L'usage :  
+` app.use(path, totoro.rain(configuration, loggerInstance, clearConsole)); ` 
 
 ## 2. L'authentification :
