@@ -61,7 +61,7 @@ le modèle :
 ` $ npm install jsonwebtoken `  
 ### L'usage :  
 ` jwt.sign(payload, secretOrPrivateKey, [options, callback]) `   
-le code de signup , login et logout sont implémentés au fichie [authentication](https://github.com/ferhi-fatah/Alos_act3/blob/main/authentication.js)  
+le code de signup , login et logout sont implémentés au fichie [authentication](https://github.com/ferhi-fatah/Alos_act3/authenticate/authentication.js) 
 ### L'execution :  
  - les data d'utilisateurs :   
  
